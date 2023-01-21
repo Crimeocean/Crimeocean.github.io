@@ -1,0 +1,1375 @@
+/* Main body style */
+
+#body {
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Style for glsl canvases */
+
+#glslCanvas {
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+
+/* Style for loading div */
+
+#loading {
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+
+.loadingtext {
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: max(min(8%, 120px), 100px);
+}
+
+.loadingtext img {
+  width: 100%;
+}
+
+/* Style for threejs canvas */
+
+#bg {
+  position: absolute;
+  z-index: -3;
+}
+
+/* Style for bullet lists */
+
+ul {
+  margin-top: 2%;
+  padding-left: 10%;
+}
+
+/* Style for main nav links */
+
+.link {
+  text-align: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: clamp(18px, 1.25vw, 24px);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  margin: 50px;
+  margin-left: clamp(20px, 2.5vw, 50px);
+  margin-right: clamp(20px, 2.5vw, 50px);
+  z-index: 1;
+  border-style: dashed;
+  border-width: clamp(1.5px, .15vw, 2px);
+  padding-top: .15%;
+  padding-bottom: .15%;
+  padding-left: .5%;
+  padding-right: .5%;
+  border-color: rgb(255, 227, 100, 0.0);
+}
+
+/* Style for main nav logo button */
+
+.logolink {
+  position: absolute;
+  margin: 20px;
+  width: clamp(60px, 15vw, 100px);
+  height: clamp(60px, 15vw, 100px);
+  z-index: 6;
+}
+
+/* Style for navigation hints */
+
+.hint {
+  position: absolute;
+  width: min(max(10%, 125px), 300px);
+}
+
+.hint img {
+  position: absolute;
+  width: 100%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+#mainhint {
+  top: 32%;
+  left: 65%;
+}
+
+#abouthint {
+  top: 50%;
+  left: 65%;
+}
+
+#arhint {
+  top: 76%;
+  left: 65%;
+}
+
+/* Style for mobile layout nav links */
+
+#mobilenavmenu {
+  position: absolute;
+  margin-top: -200%;
+  width: 100%;
+  height: 100%;
+}
+
+.mobilelinkwrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.mobilelink {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 50px;
+  z-index: 6;
+  border-style: dashed;
+  border-width: clamp(1.5px, .15vw, 2px);
+  padding: 1.25%;
+  padding-top: .15%;
+  padding-bottom: .15%;
+  border-color: rgb(255, 227, 100, 0.0);
+}
+
+#mobilenavlinksbutton {
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  width: 50px;
+  height: 50px;
+  z-index: 6;
+}
+
+#mobilenavlinksbuttontop {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 25.6%;
+  bottom: 66.07%;
+  background: #FFFFFF;
+}
+
+#mobilenavlinksbuttonmiddle {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 45.83%;
+  bottom: 45.83%;
+  background: #FFFFFF;
+}
+
+#mobilenavlinksbuttonbottom {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 66.07%;
+  bottom: 25.6%;
+  background: #FFFFFF;
+  opacity: 100%;
+}
+
+#mobilenavbackgroundblur {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 10, 16, 0.5);
+  backdrop-filter: blur(16px);
+  z-index: 5;
+  opacity: 100%;
+}
+
+/* Style for arrow buttons in about and ar contexts */
+
+.downarrowwrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  width: 100%;
+}
+
+.downarrowwrapper img {
+  position: absolute;
+  width: max(8vh, 50px);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.leftarrowwrapper {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+}
+
+.leftarrowwrapper img {
+  position: absolute;
+  width: max(10vh, 70px);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Style for about me panel and children */
+
+#aboutmepanel { 
+  position: absolute;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: min(max(320px, 40%), 450px);
+  height: min(max(320px, 50%), 550px);
+  z-index: 0;
+}
+
+#aboutmepanelwrapper {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  top: 0;
+  border-radius: 6%;
+  background-color: rgb(255, 255, 255);
+}
+
+#aboutmepanelsubject {
+  position: relative;
+  top: 10%;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: max(min(min(1.8vh, 1.8vw), 20px), 12px);
+  font-weight: 600;
+}
+
+#aboutmepaneltitle {
+  position: relative;
+  top: 12%;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: max(min(min(3.8vh, 3.8vw), 40px), 26px);
+  font-weight: 600;
+  color: rgb(255, 174, 33);
+}
+
+#aboutmepanelcontent {
+  position: relative;
+  top: 16%;
+  line-height: 130%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: max(min(min(1.6vh, 1.6vw), 20px), 13px);
+}
+
+.aboutmepaneltextwrapper {
+    position: absolute; 
+    height: 100%; 
+    width: 80%;
+    padding: 5%;
+    left: 6%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.aboutmepanelicon {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: max(min(32%, 16vh), 24%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  z-index: 0;
+}
+
+.aboutmepanelicon img {
+  width: 75%;
+  position: absolute;
+  background-color: white;
+  padding: 10%;
+  border-radius: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.aboutmepanelbuttonsback {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: max(min(50%, 25vh), 30%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  pointer-events: none;
+}
+
+.aboutmepanelbuttonsback img {
+  width: 100%;
+}
+
+.aboutmepanelbuttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 27%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  pointer-events: all;
+}
+
+/* Style for phone screen panel and children */
+
+#phonescreen {
+  position: absolute;
+  top: 50.1%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
+
+#phonescreen img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#phonescreen video {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#mobilearscrollwrapper {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  z-index: 1;
+}
+
+#mobilearscrollwrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#mobilearprojectsheader {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 12%;
+  background-color: rgb(0, 0, 0, 0.33);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 2;
+}
+
+#mobilearprojectsheadertext {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 50%;
+  color: white;
+  text-align: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 1.9vh;
+  font-weight: 600;
+}
+
+#mobilearprojectsheaderclock {
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vh;
+  font-weight: 600;
+  letter-spacing: 0.03vh;
+}
+
+#mobilearprojectsheaderwidgets {
+  position: absolute;
+  width: 17%;
+  height: 13%;
+  top: 12%;
+  right: 4%;
+}
+
+#mobilearloading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#mobileartray {
+  position: absolute;
+  left: 50%;
+  bottom: 2.5%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  width: 87%;
+  height: 12%;
+  border-radius: 8%/28%;
+  background-color: rgba(101, 53, 108, 0.33);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 2;
+}
+
+#mobilearinfobuttonwrapper {
+  position: absolute;
+  right: 0%;
+  bottom: 17%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  width: 13%;
+  padding-bottom: 13%;
+  z-index: 2;
+  opacity: 1.0;
+}
+
+#mobilearinfobutton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.0);
+}
+
+.mobilearprojectsdiv {
+  position: relative;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  top: 15%;
+  left: 50%;
+  width: 94%;
+  height: 40%;
+  border-radius: 6%;
+  overflow: hidden;
+}
+
+.mobilearprojectsdivgradient {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.266), rgba(0,0,0,1));
+  z-index: -1;
+}
+
+.mobilearprojectsdivback {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.mobilearprojectsdivtitle {
+  position: relative;
+  top: 25%;
+  left: 7%;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 500;
+  font-size: 1.9vh;
+}
+
+.mobilearprojectsdivsubtitlewrapper {
+  position: relative;
+  float: left;
+  top: 28%;
+  left: 4%;
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 1.0%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0.15vh;
+  border-color: rgb(165, 165, 165);
+}
+
+.mobilearprojectsdivsubtitlespacer {
+  position: relative;
+  float: left;
+  top: 31%;
+  left: 4%;
+  width: 0%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 1.0%;
+}
+
+.mobilearprojectsdivsubtitle {
+  color: rgb(165, 165, 165);
+  text-align: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 500;
+  font-size: 1.0vh;
+}
+
+.mobilearprojectsdivcontent {
+  position: relative;
+  top: 32%;
+  left: 7%;
+  height: 26%;
+  padding-right: 20%;
+  color: rgb(197, 197, 197);
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.3vh;
+  line-height: 130%;
+  overflow: hidden;
+}
+
+.mobilearprojectsdivbutton {
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  text-align: center;
+  width: fit-content;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 2%;
+  border-radius: 16px;
+  color: white;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 1.7vh;
+}
+
+.mobilearprojectsdivbuttonwrapper {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+}
+
+.mobileartraybuttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 20%;
+  padding-bottom: 20%;
+  z-index: 3;
+}
+
+#mobileartraybuttonlast {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  transform: scale(1.0);
+}
+
+#mobileartraybuttonhome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  transform: scale(1.0);
+}
+
+#mobileartraybuttonnext {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  transform: scale(1.0);
+}
+
+.mobilearloadinggraphic {
+  position: absolute;
+  width: 35%;
+  height: 3.0%;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Style for ar info panel and children */
+
+#arinfopanelbackgroundblur {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.33);
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  opacity: 100%;
+}
+
+#arinfopanel {
+  position: absolute;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: min(max(320px, 28%), 440px);
+  height: min(max(320px, 44%), 520px);
+  top: 50%;
+}
+
+#arinfopanelwrapper {
+  position: absolute; 
+  height: 100%; 
+  width: 100%;
+  border-radius: 6%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.arinfopanelicon {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: max(min(30%, 15vh), 20%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  z-index: 1;
+}
+
+.arinfopanelicon img {
+  width: 75%;
+  position: absolute;
+  background-color: white;
+  padding: 10%;
+  border-radius: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#arinfopanelsubject {
+  position: relative;
+  top: 6%;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: max(min(min(1.8vh, 1.8vw), 20px), 12px);
+  font-weight: 600;
+}
+
+#arinfopaneltitle {
+  position: relative;
+  top: 8%;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: max(min(min(3.2vh, 3.2vw), 40px), 27px);
+  font-weight: 600;
+  color: rgb(255, 174, 33);
+}
+
+#arinfopanelsubtitle {
+  position: relative;
+  top: 11%;
+  left: 0%;
+}
+
+.arinfopanelsubtitlewrapper {
+  float: left;
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 1.0%;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0.15vh;
+  border-color: rgb(165, 165, 165);
+}
+
+.arinfopanelsubtitlespacer {
+  position: relative;
+  float: left;
+  top: 31%;
+  left: 4%;
+  width: 0%;
+  padding-right: 2%;
+  padding-top: 0.5%;
+  padding-bottom: 1.0%;
+}
+
+.arinfopanelsubtitle {
+  color: rgb(165, 165, 165);
+  text-align: center;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 500;
+  font-size: max(min(min(1.0vh, 1.0vw), 14px), 10px);
+}
+
+#arinfopanelcontent {
+  position: relative;
+  float: left;
+  top: 15%;
+  line-height: 130%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: max(min(min(1.3vh, 1.3vw), 19px), 12px);
+}
+
+.arinfopaneltextwrapper {
+  position: absolute; 
+  height: 100%;
+  width: 80%;
+  padding: 5%;
+  left: 6%;
+  text-align: left;
+  overflow: hidden;
+}
+
+#arinfopanelclosebuttonwrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0%;
+  transform: scale(1.0);
+}
+
+#arinfopanelclosebuttonback {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: max(min(14%, 7vh), 10%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#arinfopanelclosebuttonbackborder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: max(min(18%, 1.5vh), 14%);
+  border-radius: 100%;
+}
+
+#arinfopanelclosebutton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.0);
+}
+
+#arinfopanelclosebutton img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#arinfopanelmobilebuttonsback {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: max(min(50%, 25vh), 30%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  pointer-events: none;
+}
+
+#arinfopanelmobilebuttonsback img {
+  width: 100%;
+}
+
+.arinfopanelmobilebuttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 27%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: none;
+  pointer-events: all;
+}
+
+#arinfopanelarrow {
+  position: absolute;
+  left: -4%;
+  top: 50%;
+  width: 16%;
+  height: 16%;
+  z-index: 0;
+}
+
+#arinfopanelarrow img {
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* Main nav animations */
+
+@keyframes grow {
+    100% {
+      transform: scale(1.1);
+      color: rgb(255, 227, 100);
+    }
+}
+
+@keyframes shrink {
+    0% {
+      transform: scale(1.1);
+      color: rgb(255, 227, 100);
+    }
+    100% {
+      transform: scale(1.0);
+      color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes bounce {
+    40% {
+      transform: scale(.7);
+    }
+    60% {
+      transform: scale(.9);
+    }
+    80% {
+      transform: scale(.8);
+    }
+}
+
+@keyframes bounceChangeBorder {
+    40% {
+      transform: scale(.7);
+    }
+    60% {
+      transform: scale(.9);
+    }
+    80% {
+      transform: scale(.8);
+    }
+    100% {
+      border-color: rgb(255, 227, 100, 1.0);
+    }
+}
+
+@keyframes resetScaleBorder {
+    0% {
+      border-color: rgb(255, 227, 100, 1.0);
+    }
+    100% {
+      transform: scale(1.0);
+      border-color: rgb(255, 227, 100, 0.0);
+    }
+}
+
+@keyframes mobileNavIn {
+  0% {
+    margin-top: -200%;
+  }
+  40% {
+    margin-top: 0%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes mobileNavOut {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: -200%;
+  }
+}
+
+/* Animations for mobile nav button */
+
+@keyframes mobileNavButtonTopIn {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, 10px) rotate(45deg);
+  }
+}
+
+@keyframes mobileNavButtonMiddleIn {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(-45deg);
+  }
+}
+
+@keyframes mobileNavButtonBottomIn {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes mobileNavButtonTopOut {
+  0% {
+    transform: translate(0px, 10px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes mobileNavButtonMiddleOut {
+  0% {
+    transform: translate(0px, 0px) rotate(-45deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes mobileNavButtonBottomOut {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* Animations for arrow buttons in about and ar contexts */
+
+@keyframes downArrowMouseOver {
+  100% {
+    bottom: 10.35%;
+  }
+}
+
+@keyframes downArrowMouseOut {
+  0% {
+    bottom: 10.35%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
+
+@keyframes downArrowBounce {
+  40% {
+    bottom: 9.5%;
+  }
+  60% {
+    bottom: 10.2%;
+  }
+  80% {
+    bottom: 9.9%;
+  }
+}
+
+@keyframes leftArrowMouseOver {
+  100% {
+    bottom: 11.35%;
+  }
+}
+
+@keyframes leftArrowMouseOut {
+  0% {
+    bottom: 11.35%;
+  }
+  100% {
+    bottom: 11.15%;
+  }
+}
+
+@keyframes leftArrowBounce {
+  40% {
+    bottom: 11%;
+  }
+  60% {
+    bottom: 11.25%;
+  }
+  80% {
+    bottom: 11.1%;
+  }
+}
+
+/* About me panel and children animations */
+
+@keyframes aboutMePanelIn {
+  0% {
+    transform: scale(0.1, 0.25);
+  }
+  17% {
+    transform: scale(0.7, 0.25);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes aboutMePanelOut {
+  50% {
+    transform: scale(1.0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  73% {
+    transform: scale(0.7, 0.25);
+  }
+  100% {
+    transform: scale(0.1, 0.25);
+  }
+}
+
+@keyframes aboutMeIconIn {
+  0% {
+    transform: scale(0.0);
+  }
+  40% {
+    transform: scale(0.0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes aboutMeIconOut {
+  0% {
+    transform: scale(1.0);
+  }
+  20% {
+    transform: scale(1.0);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(0.0);
+  }
+}
+
+@keyframes aboutMeButtonsIn {
+  0% {
+    transform: scale(0.0);
+  }
+  70% {
+    transform: scale(0.0);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes aboutMeButtonsOut {
+  0% {
+    transform: scale(1.0);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(0.0);
+  }
+}
+
+@keyframes aboutMeTextIn {
+  0% {
+    opacity: 0.0;
+  }
+  70% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes aboutMeTextOut {
+  0% {
+    opacity: 1.0;
+  }
+  30% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+/* AR Phone screen and children animations */
+
+@keyframes mobileArProjectsHeaderIn {
+  0% {
+    top: -20%;
+  }
+  33% {
+    top: -0.2%;
+  }
+  50% {
+    top: -1%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes mobileArScrollWrapperIn {
+  0% {
+    top: 100%;
+  }
+  33% {
+    top: 0.2%;
+  }
+  50% {
+    top: 2%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes mobileArTrayIn {
+  0% {
+    bottom: -5%;
+  }
+  33% {
+    bottom: 2.7%;
+  }
+  50% {
+    bottom: 2.4%;
+  }
+  100% {
+    bottom: 2.5%;
+  }
+}
+
+@keyframes mobileArInfoButtonIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    bottom: 1.0;
+  }
+}
+
+/* AR info panel and children animations */
+
+@keyframes arInfoPanelIn {
+  0% {
+    transform: scale(0.1, 0.25);
+  }
+  17% {
+    transform: scale(0.7, 0.25);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes arInfoPanelOut {
+  50% {
+    transform: scale(1.0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  73% {
+    transform: scale(0.7, 0.25);
+  }
+  100% {
+    transform: scale(0.1, 0.25);
+  }
+}
+
+@keyframes arInfoPanelBackgroundBlurIn {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}
+
+@keyframes arInfoPanelBackgroundBlurOut {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes arInfoIconIn {
+  0% {
+    transform: scale(0.0);
+  }
+  40% {
+    transform: scale(0.0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes arInfoIconOut {
+  0% {
+    transform: scale(1.0);
+  }
+  20% {
+    transform: scale(1.0);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(0.0);
+  }
+}
+
+@keyframes arInfoCloseButtonIn {
+  0% {
+    transform: scale(0.0);
+  }
+  70% {
+    transform: scale(0.0);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes arInfoCloseButtonOut {
+  0% {
+    transform: scale(1.0);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(0.0);
+  }
+}
+
+@keyframes arInfoTextIn {
+  0% {
+    opacity: 0.0;
+  }
+  70% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes arInfoTextOut {
+  0% {
+    opacity: 1.0;
+  }
+  30% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+/* Hint animations */
+
+@keyframes hintIn {
+  0% {
+    transform: scale(0.0);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1/0);
+  }
+}
+
+@keyframes hintOut {
+  0% {
+    transform: scale(1.0);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.0);
+  }
+}
