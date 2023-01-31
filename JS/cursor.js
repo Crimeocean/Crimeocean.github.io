@@ -20,7 +20,7 @@ $(document).ready(function(){
                 });
             });
     
-        $(".link")
+        $(".link, .logolink")
             .mouseenter(function() {
                 cursor.css({
                     transform: "scale(3.2)"
