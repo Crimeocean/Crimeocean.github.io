@@ -1373,3 +1373,22 @@ ul {
     transform: scale(0.0);
   }
 }
+
+/* Change position of info panels to be centered in the screen on mobile devices */
+
+@media screen {max-width: 600px;
+  #arinfopanel {
+    position: absolute;
+    text-align: center;
+    width: min(max(320px, 28%), 440px);
+    height: min(max(320px, 44%), 520px);
+    top: 50%;
+  }
+  #aboutmepanel { 
+    position: absolute;
+    text-align: center;
+    width: min(max(320px, 40%), 450px);
+    height: min(max(320px, 50%), 550px);
+    z-index: 0;
+  }
+}
